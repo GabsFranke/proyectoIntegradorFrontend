@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Typography } from "@mui/material";
+import { Outlet, useLocation } from "react-router-dom";
+import Buttons from "./components/Buttons";
+import { LittleProvider } from "./components/context/LittleContext";
+import NavTabs from "./components/nav/NavTabs";
+import InputSearchByDni from "./components/forms/InputSearchByDni";
 
 function App() {
+  const location = useLocation();
+  const currentLocation = location.pathname;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <LittleProvider>
+        <NavTabs />
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          padding={2}
+          margin={2}
+          borderRadius={2}
+          color="primary.main"
+          bgcolor="background.paper"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          {currentLocation !== "/" ? null : (
+            <>
+              <Typography paragraph variant="h3">
+                Welcome "Username"
+              </Typography>
+              <Typography variant="p" color="orange">
+                Are you a registered patient?
+              </Typography>
+              <Typography paragraph variant="p" color="white">
+                Please, type in your DNI so we can check your appointments.
+              </Typography>
+              <InputSearchByDni />
+            </>
+          )}
+          <Outlet />
+          <Buttons />
+        </Box>
+      </LittleProvider>
+    </>
   );
 }
 
