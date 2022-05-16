@@ -33,23 +33,19 @@ const DentistTable = () => {
   };
 
   return (
-    <Paper sx={{ maxidth: "100%", overflow: "hidden" }}>
+    <Paper sx={{ width: "100%", overflow: "hidden" }}>
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>
               <TableCell key="checkboxes">Select</TableCell>
-              <TableCell
-                key={`dentists-name`}
-                align="right"
-                style={{ minWidth: 170 }}
-              >
+              <TableCell key={`dentists-name`} align="right">
                 Name
               </TableCell>
               <TableCell
                 key={`dentists-lastname`}
                 align="right"
-                style={{ minWidth: 170 }}
+                style={{ minWidth: 100 }}
               >
                 Lastname
               </TableCell>
@@ -63,47 +59,47 @@ const DentistTable = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {!dentistsData ? null :  (
-              dentistsData
-                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                .map((dentist) => (
-                  <TableRow
-                    hover
-                    role="checkbox"
-                    tabIndex={-1}
-                    key={`${dentist.id}`}
-                  >
-                    <TableCell padding="checkbox">
-                      <Radio
-                        checked={isSelected === `${dentist.id}`}
-                        value={`${dentist.id}`}
-                        name="radio-buttons"
-                        color="primary"
-                        id={`${dentist.id}`}
-                        onChange={handleSelected}
-                      />
-                    </TableCell>
-                    <TableCell
-                      key={`${dentist.id}-${dentist.name}`}
-                      align="right"
+            {!dentistsData
+              ? null
+              : dentistsData
+                  .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                  .map((dentist) => (
+                    <TableRow
+                      hover
+                      role="checkbox"
+                      tabIndex={-1}
+                      key={`${dentist.id}`}
                     >
-                      {dentist.name}
-                    </TableCell>
-                    <TableCell
-                      key={`${dentist.id}-${dentist.lastname}`}
-                      align="right"
-                    >
-                      {dentist.lastname}
-                    </TableCell>
-                    <TableCell
-                      key={`${dentist.id}-${dentist.registrationNumber}`}
-                      align="right"
-                    >
-                      {dentist.registrationNumber}
-                    </TableCell>
-                  </TableRow>
-                ))
-            )}
+                      <TableCell padding="checkbox">
+                        <Radio
+                          checked={isSelected === `${dentist.id}`}
+                          value={`${dentist.id}`}
+                          name="radio-buttons"
+                          color="primary"
+                          id={`${dentist.id}`}
+                          onChange={handleSelected}
+                        />
+                      </TableCell>
+                      <TableCell
+                        key={`${dentist.id}-${dentist.name}`}
+                        align="right"
+                      >
+                        {dentist.name}
+                      </TableCell>
+                      <TableCell
+                        key={`${dentist.id}-${dentist.lastname}`}
+                        align="right"
+                      >
+                        {dentist.lastname}
+                      </TableCell>
+                      <TableCell
+                        key={`${dentist.id}-${dentist.registrationNumber}`}
+                        align="right"
+                      >
+                        {dentist.registrationNumber}
+                      </TableCell>
+                    </TableRow>
+                  ))}
           </TableBody>
         </Table>
       </TableContainer>

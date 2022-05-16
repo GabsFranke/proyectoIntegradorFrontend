@@ -26,14 +26,14 @@ const AppointmentsTable = () => {
               <TableCell
                 key={`patient-name`}
                 align="right"
-                style={{ minWidth: 170 }}
+                style={{ minWidth: 100 }}
               >
                 Patient Name
               </TableCell>
               <TableCell
                 key={`patient-lastname`}
                 align="right"
-                style={{ minWidth: 170 }}
+                style={{ minWidth: 100 }}
               >
                 Patient Lastname
               </TableCell>
