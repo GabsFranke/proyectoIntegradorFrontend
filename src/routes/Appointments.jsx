@@ -50,7 +50,7 @@ export const Appointments = () => {
               If you are not a registered patient:
             </Typography>
             <Typography paragraph variant="p" color="white">
-              Please contact us at our fake number: <b>+55 (11) R34C7J5</b> and
+              Please contact us at our fake number <b>+55 (11) R34C7J5</b> and
               we will register you as soon as posible. Thank you.
             </Typography>
             <Typography variant="p" color="orange">

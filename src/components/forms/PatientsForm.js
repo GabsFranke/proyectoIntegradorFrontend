@@ -183,6 +183,7 @@ const PatientsForm = () => {
         />
         <TextField
           id="dni"
+          type="number"
           name="dni"
           label="DNI"
           value={patient.dni || ""}
@@ -207,6 +208,7 @@ const PatientsForm = () => {
         />
         <TextField
           id="number"
+          type="number"
           name="number"
           label="Number"
           value={patient.addresses[0].number || ""}

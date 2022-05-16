@@ -23,6 +23,10 @@ export const Patients = () => {
   return (
     <Container>
       <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
         padding={2}
         margin={2}
         borderRadius={2}

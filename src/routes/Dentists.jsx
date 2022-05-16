@@ -22,29 +22,32 @@ export const Dentists = () => {
   return (
     <Container>
       <Box
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
         padding={2}
         margin={2}
         borderRadius={2}
         color="primary.main"
         bgcolor="background.paper"
       >
-      {loading ? (
-        <Loader />
-      ) : error ? (
-        <Typography variant="p" color="red">
-          There has been an error or the API might be offline.
-        </Typography>
-      ) : !apiData || !apiData.length ? (
+        {loading ? (
+          <Loader />
+        ) : error ? (
+          <Typography variant="p" color="red">
+            There has been an error or the API might be offline.
+          </Typography>
+        ) : !apiData || !apiData.length ? (
           <Typography variant="h5" color="orange">
             There's no data right now, try registering a new dentist.
           </Typography>
-      ) : (
-        <DentistTable />
-      )}
-      {/* DentistForm */}
+        ) : (
+          <DentistTable />
+        )}
+        {/* DentistForm */}
         <Outlet />
       </Box>
     </Container>
-    
   );
 };
