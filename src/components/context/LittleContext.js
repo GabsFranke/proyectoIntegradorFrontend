@@ -8,7 +8,7 @@ const LittleProvider = ({ children }) => {
   const [patientsData, setPatientsData] = useState(null);
   const [patientId, setPatientId] = useState("");
   const [appointmentsData, setAppointmentsData] = useState(null);
-  const [url, setUrl] = useState("https://test-api-gf.herokuapp.com/");
+  const [url, setUrl] = useState("https://test-api-gf.herokuapp.com");
   const [fetchController, setFetchController] = useState(0);
 
   const context = {
