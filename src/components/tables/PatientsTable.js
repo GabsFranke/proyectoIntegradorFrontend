@@ -15,8 +15,6 @@ const PatientsTable = () => {
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const { isSelected, setIsSelected, patientsData } = useContext(LittleContext);
 
-  console.log(patientsData);
-
   useEffect(() => {
     setIsSelected("");
   }, [patientsData]);
