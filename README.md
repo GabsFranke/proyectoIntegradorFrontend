@@ -1,9 +1,10 @@
 # Little Front End project
 
+Deploy: https://front-api-gf.herokuapp.com/
+
 This small project had no requirements other than my own needs to aquire some experience and implement some of the concepts i've learned so far. I had a very short timeframe (7 days) and a lot of ideas, so i decided to exclude a few things, not to worry too much about the UI/Web Design itself, and focus mostly on the concepts I wanted to apply and a smooth, bug-free user experience. 
 It is based of a small backend project for which i was required to make an API for a supposed dental clinic (you can learn more about it here: https://github.com/GabsFranke/proyectoIntegradorBackend1).
 
-FrontEnd Deploy: https://front-api-gf.herokuapp.com/
 
 ## Concepts and frameworks used
 
