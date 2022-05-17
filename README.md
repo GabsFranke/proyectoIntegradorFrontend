@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Little Front End project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This small project had no requirements other than my own needs to aquire some experience and implement some of the concepts i've learned so far. I had a very short timeframe (7 days) and a lot of ideas, so i decided to exclude a few things, not to worry too much about the UI/Web Design itself, and focus mostly on the concepts I wanted to apply and a smooth, bug-free user experience. 
+It is based of a small backend project for which i was required to make an API for a supposed dental clinic (you can learn more about it here: https://github.com/GabsFranke/proyectoIntegradorBackend1).
 
-## Available Scripts
+FrontEnd Deploy: https://front-api-gf.herokuapp.com/
 
-In the project directory, you can run:
+## Concepts and frameworks used
 
-### `npm start`
+** React.js **
+- CRUD
+- useContext, useEffect, useState, custom Hook
+- UX and conditional rendering
+- Custom components
+- Error handling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+** React Router Dom v6 **
+- HashRouter, nested routes, Outlet
+- useLocation, useNavigate, useParam
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+** [MUI](https://mui.com/) EmotionStyled components and icons **
+- CSSBaseline, ThemeProvider, custom theme
+- Basic components like: Paper, Container, Box, Typography
+- Other components like: Inputs, Buttons, NavTabs, Tables
 
-### `npm test`
+## Goals accomplished
++ In 7 days I learned how to use MUI while coding my first CRUD, also routing and using context for the first time. 
++ I've done a lot of testing based in the userflow and tried to solve as many glitches and errors i could find.
++ This is also my first experience deploying an app (well second if we count my API). 
++ The web app can be used in mobiles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Dev Comments
+Currently the lack of an admin page for Appointments will make user experience a bit weird, since the patients and dentists pages are intended to be used by an admin, and the appointment page is meant for users. 
+The thing is that I ran out of time since i'm currently starting a new, much more important - group - project. 
+So i had to settle with what I achieved and forcefully left out a few things that would make this basic app look more complete, like a basic login and the admin page for appointments, and maybe a much better landing page.
+But I'm quite happy with everything I learned here. This was a great experience.
