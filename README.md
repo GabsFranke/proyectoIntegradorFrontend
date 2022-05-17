@@ -8,18 +8,18 @@ It is based of a small backend project for which i was required to make an API f
 
 ## Concepts and frameworks used
 
-** React.js **
+**React.js**
 - CRUD
 - useContext, useEffect, useState, custom Hook
 - UX and conditional rendering
 - Custom components
 - Error handling
 
-** React Router Dom v6 **
+**React Router Dom v6**
 - HashRouter, nested routes, Outlet
 - useLocation, useNavigate, useParam
 
-** [MUI](https://mui.com/) EmotionStyled components and icons **
+**[MUI](https://mui.com/) EmotionStyled components and icons**
 - CSSBaseline, ThemeProvider, custom theme
 - Basic components like: Paper, Container, Box, Typography
 - Other components like: Inputs, Buttons, NavTabs, Tables
