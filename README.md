@@ -27,8 +27,8 @@ It is based of a small backend project for which i was required to make an API f
 ## Goals accomplished
 + In 7 days I learned how to use MUI while coding my first CRUD, also routing and using context for the first time. 
 + I've done a lot of testing based in the userflow and tried to solve as many glitches and errors i could find.
-+ This is also my first experience deploying an app (well second if we count my API). 
 + The web app can be used in mobiles.
++ App deployment in Heroku platform.
 
 ## Dev Comments
 Currently the lack of an admin page for Appointments will make user experience a bit weird, since the patients and dentists pages are intended to be used by an admin, and the appointment page is meant for users. 
