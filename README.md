@@ -8,7 +8,7 @@ This small project had no requirements other than my own needs to aquire some ex
 It is based of a small backend project for which i was required to make an API for a supposed dental clinic (you can learn more about it here: https://github.com/GabsFranke/proyectoIntegradorBackend1).
 
 
-## Concepts and frameworks used
+## Concepts, frameworks and libraries used
 
 **React.js**
 - CRUD
